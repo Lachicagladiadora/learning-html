@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIMEDIA</title> 
+    <style>
+        video{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MULTIMEDIA</h1>
+    <hr>
+    <h2>VIDEOS</h2>
+    <!-- <video src="media/video1.mp4" controls 
+    poster="media/escritor.jpg"></video> -->
+
+    <video id="video" src="media/video1.mp4" 
+    poster="media/escritor.jpg"></video>
+    <button id="play">play</button>
+    <button id="pause">pause</button>
+        <script>
+            const video=document.getElementById('video')
+            const play=document.getElementById('play')
+            const pause=document.getElementById('pause')
+
+            play.addEventListener('click',()=>{
+                video.play()
+            })
+            pause.addEventListener('click',()=>{
+                video.pause()
+            })
+        </script>
+    
+    <h2>AUDIO</h2>
+    <audio src="media/audio1.mp3" controls autoplay>Audio 1</audio>
+
+</body>
+</html>
