@@ -9,27 +9,32 @@ Guide to learn, remember and feedback knowledge in HTML
 - nav and links
 - article
 - paragraph
-- ![section](./img/html1.png)
+- section
+![section](./img/html1.png)
 - lists
   - unordered list
   - ordered list
   - nested lists
-  - ![definition lists](./img/html2.png)
+  - definition lists
+  ![definition lists](./img/html2.png)
 - figure and figcaption
   - code
   - pre
 - main
 - blockquote
 - div and span
-- ![strong, em, hr, br](./img/html3.png)
+- strong, em, hr, br
+![strong, em, hr, br](./img/html3.png)
 - subfolder
 - images
-  - ![images according to viewport](./img/html4.png)
+  - images according to viewport
+  ![images according to viewport](./img/html4.png)
 - article with other page
 - boards
 - forms
 - multimedia 
 - interactive content
-- ![aside and footer](./img/html5.png)
+- aside and footer
+![aside and footer](./img/html5.png)
 
 
