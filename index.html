@@ -79,16 +79,22 @@
                 <cite>cite</cite>
                 <dfn>definition</dfn>
                 <br> <!-- line breaks -->
+                <q>quotes</q>
                 <code>
-                    funcion hola () {
+                    funcion hola = () => {
                         console.log("HELLO WORLD")
                     }
                 </code>
-                <!-- <abbr title="Hyper Text Markup Language">HTML</abbr> -->
-                <abbr title="United States">EE.UU.</abbr>
-                <acronym title="North Atlantic Treaty Organization">NATO</acronym>
+                <abbr title="Abbreviation or Acronym">abbr</abbr>   =>    <abbr title="Hyper Text Markup Language">HTML</abbr>
                <del>text that has been removed</del>
-               <p><wbr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam fugit recusandae tempore dolores aliquam iure odit repellat reiciendis doloremque illo dolorum incidunt totam in, alias at ullam asperiores enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis, fuga dicta error temporibus soluta qui minima necessitatibus praesentium. Iste labore in corrupti numquam nesciunt accusamus quae aut alias repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit ut voluptatem deleniti, magni iste, cupiditate vero recusandae quam, tempore molestiae veritatis? Incidunt nesciunt suscipit obcaecati assumenda porro magnam culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa molestiae iure itaque? At harum eligendi corporis eos consequatur! Fugit, doloremque aperiam! Assumenda, cumque enim doloremque laudantium nemo doloribus saepe earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur neque, repellendus accusamus a repudiandae sapiente similique voluptatem asperiores tempore inventore iste explicabo veniam. Numquam, aliquam natus. Facilis assumenda vero delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis expedita, soluta fugiat nihil neque quo, excepturi, sint laudantium necessitatibus beatae illo! Nulla impedit, laboriosam adipisci dignissimos nostrum repellat a.</p>
+               <span>span</span>
+               <i>italic</i>
+               <b>bold</b>
+               <u>underline</u>
+               hello <sup>superscript</sup>
+               goodbye <sub>subscript</sub>
+               <mark>highlighted text</mark>
+               <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML Basics</a>
             </pre>
             </p>
             <p>paragraph
@@ -109,51 +115,48 @@
     <h2>Listas</h2>
     <h3>Unordener List</h3>
     <ul> <!-- unordered list -->
-        <li>elemento 1</li>
+        <li>elemento 1</li> <!-- List Item -->
         <li>elemento 2</li>
         <li>elemento 3</li>
     </ul>
     <h3>Ordener List</h3>
     <ol> <!-- ordered list -->
-        <li value="36">Elemento 1</li> <!--de donde empieza la numeracion de los items-->
+        <li value="36">Elemento 1</li> <!--from where the numbering of the items begins-->
         <li>Elemento 2</li>
         <li>Elemento 3</li>
     </ol>
-    <!-- L. Anidadas -->
-    <h3>L. Anidadas </h3>
-    <p>Limones segun color </p>
-    <!-- Unordener List -->
+    <hr>
+    <h3>L. Anidadas </h3> <!-- L. Anidadas -->
+    <p>Nested Elements </p>
     <ul>
-        <!-- List Item -->
-        <li>limon amarillo</li>
-        <ol> <!--Ordener List-->
-            <li>sksxms</li>
-            <li>fksnc</li>
-        </ol>
-        <li>limon verde</li>
+        <li>elements</li>
         <ol>
-            <li>skx</li>
-            <li>sxkn</li>
+            <li>first sub-element</li>
+            <li>second sub-element</li>
         </ol>
-        <li>limon verde claro</li>
+        <li>elements two</li>
         <ol>
-            <li>lksmcksm</li>
-            <li>skjxnksjx</li>
+            <li>first sub-element</li>
+            <li>second sub-element</li>
+        </ol>
+        <li>elements three</li>
+        <ol>
+            <li>first sub-element</li>
+            <li>second sub-element</li>
         </ol>
     </ul>
     <hr>
-    <br>
     <!-- SEGUNDA CLASE DE CODIGO -->
     <!-- L. d/Definicion -->
     <h3>L. d/Definicion</h3>
     <p>Listas de capitales</p>
     <dl>
-        <dt>Peru</dt>
-        <dd>Lima</dd>
+        <dt>Peru</dt> <!--term-->
+        <dd>Lima</dd> <!--definition-->
         <dt>Colombia</dt>
-        <dd>Bogota</dd>
+        <dd><dfn>Bogota</dfn></dd>
     </dl>
-
+    <hr>
     <!-- Figure & Figcaption  -->
     <!-- esta relacionado pero rompe con el flujo de texto -->
     <!-- puede ser imagen, citas, videos -->
