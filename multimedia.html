@@ -19,7 +19,11 @@
     poster="media/escritor.jpg"></video> -->
 
     <video id="video" src="media/video1.mp4" 
-    poster="media/escritor.jpg"></video>
+    poster="media/escritor.jpg" width="640px" height="480px" poster="./media/escritor.jpg" autoplay loop controls>
+    <track src="subs-es.vtt" srclang="es" label="Español" default> <!--add captions options-->
+    <track src="subs-en.vtt" srclang="en" label="English">
+    <track src="subs-fr.vtt" srclang="fr" label="Français">
+</video>
     <button id="play">play</button>
     <button id="pause">pause</button>
         <script>
@@ -36,7 +40,8 @@
         </script>
     
     <h2>AUDIO</h2>
-    <audio src="media/audio1.mp3" controls autoplay>Audio 1</audio>
+    <audio src="media/audio1.mp3" controls autoplay loop>Audio 1</audio>
+    <!-- Metadata attribute -->
 
 </body>
 <style>

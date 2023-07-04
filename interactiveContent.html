@@ -1,60 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTERACTIVITY AND ENBEDDED CONTENT</title>
+    <title>INTERACTIVITY AND EMBEDDED CONTENT</title>
 </head>
+
 <body>
-    
+
     <dialog id="modal">
-        <h3>Curso nuevo</h3>
-        <p>precio: S/.30</p>
-        <p>Profesor: Carlo Eduardo</p>
-        <button id="close">Cerrar</button>
+        <h3>Go back to the shadow!</h3>
+        <img src="data:image/jpeg;base64,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"
+            alt="">
+        <p>you can not pass</p>
+        <button id="close">ok!</button>
     </dialog>
     <button id="button">Abrir modal</button>
-    
-    <h1>INTERACTIVITY AND ENBEDDED CONTENT</h1>
+
+    <h1>INTERACTIVITY AND EMBEDDED CONTENT</h1>
     <a href="../index.html">COME BACK TO HOME</a>
-    <h2>Contenido Interactivo</h2>
+    <h2>INTERACTIVITY CONTENT</h2>
     <!-- contenido que interactua con el usuario -->
     <details>
         <summary>HTML</summary>
-<!-- DETAILS: crea un acordeon (widget que se expande como un toogle) -->
+        <!-- DETAILS: crea un acordeon (widget que se expande como un toogle) -->
         <p>Lenguaje de marcado de hipertexto</p>
-    </details> 
+    </details>
     <!-- popap: instancia del navegador, abre otra ventana -->
-    
-    <hr>
-    <h2>Contenido Embebido</h2>
-    <!-- contenido que traes externamente, de otro sitio -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_haBE8EHIEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<!-- "<iframe src="" frameborder="0"></iframe>": se usa para traeruna pagina web con toda su estructura --> 
-<div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.419045416163!2d-71.98387648558865!3d-13.50985599050438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd66e7c08a8fd%3A0x9e3cb8b1e4c3803c!2sSaqsaywaman!5e0!3m2!1ses-419!2spe!4v1677198106661!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-</div>
 
-<div>
-    <!-- <blockquote class="instagram-media" data-instgrm-version="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&utm_campaign=loading"></blockquote> -->
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Francisco Sola (@franciscosolaok)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
-</div>
+    <hr>
+    <h2>EMBEDDED CONTENT</h2>
+    <!-- contenido que traes externamente, de otro sitio -->
+    <iframe width="478" height="269" src="https://www.youtube.com/embed/7Pw4EaPw4ao"
+        title="Julio Cortázar: &quot;Borges me dio una lección sobre la escritura&quot; ❤️📚" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/_haBE8EHIEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <!-- "<iframe src="" frameborder="0"></iframe>": se usa para traeruna pagina web con toda su estructura -->
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.419045416163!2d-71.98387648558865!3d-13.50985599050438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd66e7c08a8fd%3A0x9e3cb8b1e4c3803c!2sSaqsaywaman!5e0!3m2!1ses-419!2spe!4v1677198106661!5m2!1ses-419!2spe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div>
+        <!-- <blockquote class="instagram-media" data-instgrm-version="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&utm_campaign=loading"></blockquote> -->
+        <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&utm_campaign=loading"
+            data-instgrm-version="14"
+            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            <div style="padding:16px;"> <a
+                    href="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                    target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                        <div
+                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                            <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                            </div>
+                            <div
+                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                            height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                    <g>
+                                        <path
+                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>
+                    <div style="padding-top: 8px;">
+                        <div
+                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                            Ver essa foto no Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                        <div>
+                            <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                            </div>
+                            <div
+                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                            </div>
+                            <div
+                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                            </div>
+                        </div>
+                        <div style="margin-left: 8px;">
+                            <div
+                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                            </div>
+                            <div
+                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                            </div>
+                        </div>
+                        <div style="margin-left: auto;">
+                            <div
+                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                            </div>
+                            <div
+                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                            </div>
+                            <div
+                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                        <div
+                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                        </div>
+                        <div
+                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                        </div>
+                    </div>
+                </a>
+                <p
+                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/reel/Co-2xTUJJD3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                        target="_blank">Uma publicação compartilhada por Francisco Sola (@franciscosolaok)</a></p>
+            </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+    </div>
 </body>
 <script>
-    const modal=document.getElementById('modal')
-    const button=document.getElementById('button')
-    const close=document.getElementById('close')
-    button.addEventListener('click',()=>{
+    const modal = document.getElementById('modal')
+    const button = document.getElementById('button')
+    const close = document.getElementById('close')
+    button.addEventListener('click', () => {
         modal.setAttribute('open', 'true')
     })
-    close.addEventListener('click',()=>{
+    close.addEventListener('click', () => {
         modal.removeAttribute('open')
     })
 </script>
 <style>
-    body{
-      background: rgb(144, 144, 144);
+    body {
+        background: rgb(144, 144, 144);
     }
-  </style>
+
+    #alert-dialog::backdrop {
+        background: linear-gradient(#000d, #000a);
+    }
+</style>
+
 </html>

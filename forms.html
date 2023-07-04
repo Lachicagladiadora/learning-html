@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS</title>
 </head>
+
 <body>
     <h1>FORMS</h1>
     <a href="../index.html">COME BACK TO HOME</a>
-    <form action="">
-    <!-- al atributo "action" le damos la ruta del servidor. 
+    <form name="log in" method="post" action="">
+        <!-- al atributo "action" le damos la ruta del servidor. 
     luego le agregamos el atributo "method" que indica el metodo por el cual llegaran los 
     datos a nuestro servidor. tenemos "GET" envia los datos a travez de un link y 
     "POST" envia los datos   -->
         <fieldset>
             <legend>I already have account</legend>
             <div>
-            <!-- <label for="nombre">Ingrese su nombre </label>
+                <!-- <label for="nombre">Ingrese su nombre </label>
             <input type="text", id="username", name="Username">    -->
-            <input type="text", name="username", placeholder="Enter your username">
-        </div>
-        <div>
-            <label>
-                Enter your password
-                <input type="text", id="password" name="password" required>
-            </label>
-        </div>
-        <div>
-            <!-- Formas de colocar el boton de enviar -->
-            <!-- <button>Enviar</button> -->
-            <input type="submit", value="Log in">
-            <!-- Value, es para cambiar el nombre del boton -->
-        </div>
+                <input type="text" , name="username" , placeholder="Enter your username">
+            </div>
+            <div>
+                <label>
+                    enter your password
+                    <input type="text" , id="password" name="password" required>
+                </label>
+            </div>
+            <div>
+                <!-- Formas de colocar el boton de enviar -->
+                <!-- <button>Enviar</button> -->
+                <input type="submit" , value="Log in">
+                <!-- Value, es para cambiar el nombre del boton -->
+            </div>
         </fieldset>
 
         <fieldset>
             <legend>I want to have account</legend>
             <div>
-            <label for="">
-                email
-                <input type="email" required>
-            </label>
-        </div>
-        <div>
-            <label for="">
-                date of birth
-                <input type="date">
-            </label>
-        </div>
-        <div>
-            <label for="">
-                Enter the amount you are going to buy
-                <input type="number" value="3" readonly>
-                <!-- Type="number": sirve para el numero de items en compras -->
-            </label>
-        </div>
+                <label for="">
+                    email
+                    <input type="email" required>
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    date of birth
+                    <input type="date">
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    enter the amount you are going to buy
+                    <input type="number" value="3" readonly>
+                    <!-- Type="number": sirve para el numero de items en compras -->
+                </label>
+            </div>
         </fieldset>
-        
-    </form> 
+
+    </form>
     <fieldset>
         <legend>Hobbies</legend>
         <label for="">
@@ -84,64 +86,71 @@
     </fieldset>
     <fieldset>
         <legend>Gender</legend>
-        <label for=""><input type="radio", name="gender">Female</label>
-        <label for=""><input type="radio", name="gender">Male</label>
-        <label for=""><input type="radio", name="gender">I prefer not to say</label>
+        <label for=""><input type="radio" , name="gender">Female</label>
+        <label for=""><input type="radio" , name="gender">Male</label>
+        <label for=""><input type="radio" , name="gender">I prefer not to say</label>
     </fieldset>
     <fieldset>
         <legend>Select and Options</legend>
-        <label for="country">choose your country</label> 
+        <label for="country">choose your country</label>
         <!-- despues del atributo "id", se puede agregar "multiple" que nos permitira seleccionar varias opciones -->
         <select name="country" id="country">
             <!-- <option value="Peru">Peru</option>
             <option value="Argentina">Argentina</option>
             <option value="Colombia">Colombia</option> -->
             <!--en el "value" puede ir solo el codigo de pais (pe, ar, co), pues es lo que va a la base de datos  -->
-        <optgroup label="America">
-            <option value="Peru">Peru</option>
-            <option value="Argentina">Argentina</option>
-            <option value="Colombia">Colombia</option>
-        </optgroup>
-        <optgroup label="Europa">
-            <option value="France">France</option>
-            <option value="Portugal">Portugal</option>
-            <option value="Germany">Germany</option>
-        </optgroup>
-        <optgroup label="Asia">
-            <option value="China">China</option>
-            <option value="Japan">Japan</option>
-            <option value="Thailand">Thailand</option>
-        </optgroup>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
+            <optgroup label="America">
+                <option value="Peru">Peru</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="France">France</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Germany">Germany</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="Thailand">Thailand</option>
+            </optgroup>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
         </select>
     </fieldset>
 
-<!-- TIPOD DE BUTTON -->
+    <!-- TYPE OF BUTTON -->
     <br>
+    <input type="range">
     <!-- podemos agregar imagenes -->
     <!-- <button type="button">: su comportamiento tiene que especificarse con java script -->
-    <button type="button"> <img src="img02.png" height="400px" alt=""> tipo button</button> 
+    <button type="button"> <img src="img02.png" height="400px" alt=""> tipo button</button>
     <!-- <button type="menu">: -->
-    <button type="menu">tipo menu</button>
+    <button type="menu">type menu</button>
     <!-- <button type="reset">: deja el formulario con los valores iniciales -->
-    <button type="reset">tipo reset</button> 
+    <button type="reset">type reset</button>
     <!-- <button type="submit">: envia los datos a la ruta especificada en la etiqueta de "form" 
         con el atributo "action" -->
-    <button type="submit">tipo submit</button>
+    <button type="submit">type submit</button>
+    <br>
     <a href="../index.html">COME BACK TO HOME</a>
-    <script>
-        document.getElementById('username').addEventListener('keyup', ()=>{
-            console.log(e.target.value)
-        })
-        document.getElementById('password').addEventListener('keyup', ()=>{
-            console.log(e.target.value) 
-        })
-        // value: guarda el valor de cada campo 
-    </script>
+
+
 </body>
+
+<script>
+    document.getElementById('username').addEventListener('keyup', () => {
+        console.log(e.target.value)
+    })
+    document.getElementById('password').addEventListener('keyup', () => {
+        console.log(e.target.value)
+    })
+        // value: guarda el valor de cada campo
+</script>
+
 <style>
-    body{
-      background: rgb(236, 229, 193);
+    body {
+        background: rgb(236, 229, 193);
     }
-  </style>
+</style>
+
 </html>

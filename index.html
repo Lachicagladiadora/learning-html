@@ -10,6 +10,7 @@
   <title>LEARNING HTML</title> <!-- TITLE of the web page: appears in the tab or bar of the browser -->
   <link rel="stylesheet" href="style.css"> <!-- CSS -->
   <link rel="shortcut icon" href="./img/logoHTML.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-dracula.min.css">
   <!-- ICONO de la pagina web, este aparecera en la pestanha junto al titulo -->
 </head>
 
@@ -39,6 +40,7 @@
   <hr>
   <br>
   <!-- Article: sirve para mostrar contenido -->
+<main>
   <article>
     <h2>HEADERS</h2>
     <h1>H1: main title</h1> <!--main title-->
@@ -66,6 +68,7 @@
         excepturi ipsam odio expedita magni quod voluptatem omnis earum minima. Quo cumque quae eius adipisci
         quos earum?
       </p>
+    </article>
     </section>
     <hr>
     <br>
@@ -107,12 +110,24 @@
         <span>Lorem ipsum <ins datetime="2023-07-03" cite="https://lenguajehtml.com/html/texto/etiqueta-html-ins-del/">added text</ins> dolor sit amet consectetur adipisicing elit. Quo error fuga odit quisquam asperiores soluta deserunt pariatur <ins>added text</ins> quidem rerum, voluptate corrupti earum voluptatibus dolorum atque eum dolore deleniti laborum quod?</span>
         del: <del>text that has been removed</del>
       </pre>
-      <hr> "hr"<strong>cambio de seccion</strong>, de capitulo, <em>rompe la secuencia</em>
+      <blockquote cite="http://es.wikiquote.org/wiki/Fight_Club">
+        <cite class="cite">La primera regla del Club de la Lucha es: Nadie habla sobre el Club de la Lucha.</cite>
+        <cite class="author">Tyler Durden en El Club de la Lucha</cite>
+      </blockquote>  
       wbr: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<strong>wbr</strong><wbr><strong>wbr</strong>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<strong>wbr</strong><wbr><strong>wbr</strong>cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<strong>wbr</strong><wbr><strong>wbr</strong>ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd<strong>wbr</strong><wbr><strong>wbr</strong>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<strong>wbr</strong><wbr><strong>wbr</strong>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff<strong>wbr</strong><wbr><strong>wbr</strong>
-      <br> <!-- line breaks -->
+      <br>
+      line breaks <strong>br</strong><br><strong>br</strong> line breaks
+      <hr> "hr"<strong>cambio de seccion</strong>, de capitulo, <em>rompe la secuencia</em>
     </section>
-  </article>
-  <br>
+    <pre>
+      <code class="language-javascript">
+        function mensaje(str) {
+          console.log(str);
+        }
+      </code>
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs"></script>
+    <br>
   <hr>
 
   <h2><a href="./lists.html">LISTS</a></h2>
@@ -168,8 +183,9 @@
   <hr>
   <br>
   
-  <h2>Aside and Footer</h2>
+</main>
   <aside> <!-- Si te interesa mas contenido sigurme en:  -->
+    <h2>Aside and Footer</h2>
     <pre>
       To display <q>unrelated</q> content, <mark>advertising</mark>, <strong>social media</strong> buttons
       Footer, used to show <u><strong><big><mark>credits</mark></big></strong></u>
