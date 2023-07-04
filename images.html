@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAGES</title>
+</head>
+
+<body>
+
+  <h2>IMAGES</h2>
+  <a href="../index.html">COME BACK TO HOME</a>
+  <br>
+  <img src="./img/gengar.png" alt="foto de limon y kiwi" height="200px">
+  <!-- SEXTA CLASE CON CODIGO 
+    Imagenes segun viewport-->
+    <img src="img/Folhas.svg" height="300px" alt="">
+    <hr>
+    <br>
+  <h3>Imagenes segun viewport</h3>
+  <p>por favor haga zoom o reduzca el tamanio de la pantalla</p>
+  <!-- <img 
+          src="img/pessoas.jpg"  
+          srcset="img/mountain.jpg 1.5x,
+                  img/flowers.jpg 2x" 
+      > -->
+  <!-- otra forma de colocar imagenes segun el viewport 
+      "picture" es para mas variaciones indicando-->
+  <picture>
+    <source srcset="./img/img02.png" media="(min-width:1280px)" height="700px">
+    <source srcset="./img/zebra.jpg" media="(min-width:1000px)" height="400px">
+    <source srcset="./img/pessoas.jpg" media="(min-width: 800px)" height="400px">
+    <source srcset="./img/mountain.jpg" media="(min-width: 580px)" height="400px">
+    <img src="./img/flowers.jpg" alt="Foto de flores" height="400px">
+  </picture>
+
+  <br>
+</body>
+<style>
+  body {
+    background: rgb(243, 188, 121);
+  }
+</style>
+
+</html>

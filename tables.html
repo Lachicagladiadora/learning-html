@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+    
+</head>
+
+<body>
+    <h1>TABLES</h1>
+    <a href="../index.html">COME BACK TO HOME</a>
+
+    <h1>My class schedule</h1>
+    <table>
+        <caption>My class schedule</caption>
+        <colgroup>
+            <col span="4">
+            <col style="background: burlywood;">
+
+        </colgroup>
+        <thead>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td rowspan="2">Python</td>
+                <td rowspan="2">Java</td>
+                <td>Angular</td>
+                <td rowspan="2">Algorithm</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td colspan="5">Playtime</td>
+            </tr>
+            <tr>
+                <td>Go</td>
+                <td>Big data</td>
+                <td>Design UX</td>
+                <td>PHP</td>
+                <td>SQL</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background: rgb(246, 246, 134);">
+                <td>3 credits</td>
+                <td>7 credits</td>
+                <td>2 credits</td>
+                <td>9 credits</td>
+                <td>5 credits</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+<style>
+    body{
+    background: rgb(246, 228, 209);
+  }
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid #29bb63cc
+    }
+
+    th {
+        border: 1px solid #8e6ee7cc;
+        background: #e67a7acc;
+        color: cadetblue;
+    }
+
+    td,
+    th {
+        text-align: center;
+        padding: 0.5em;
+    }
+</style>
+
+</html>

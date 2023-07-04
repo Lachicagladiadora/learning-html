@@ -4,53 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIOS</title>
+    <title>FORMS</title>
 </head>
 <body>
-    <h1>FORMULARIOS</h1>
+    <h1>FORMS</h1>
+    <a href="../index.html">COME BACK TO HOME</a>
     <form action="">
     <!-- al atributo "action" le damos la ruta del servidor. 
     luego le agregamos el atributo "method" que indica el metodo por el cual llegaran los 
     datos a nuestro servidor. tenemos "GET" envia los datos a travez de un link y 
     "POST" envia los datos   -->
         <fieldset>
-            <legend>Ya tengo cuenta</legend>
+            <legend>I already have account</legend>
             <div>
             <!-- <label for="nombre">Ingrese su nombre </label>
             <input type="text", id="username", name="Username">    -->
-            <input type="text", name="username", placeholder="Ingrese su nombre de usuario">
+            <input type="text", name="username", placeholder="Enter your username">
         </div>
         <div>
             <label>
-                Ingrese su contraseña
-                <input type="text", id="password" name="Password" required>
+                Enter your password
+                <input type="text", id="password" name="password" required>
             </label>
         </div>
         <div>
             <!-- Formas de colocar el boton de enviar -->
             <!-- <button>Enviar</button> -->
-            <input type="submit", value="Iniciar sesión">
+            <input type="submit", value="Log in">
             <!-- Value, es para cambiar el nombre del boton -->
         </div>
         </fieldset>
 
         <fieldset>
-            <legend>Quiero tener cuenta</legend>
+            <legend>I want to have account</legend>
             <div>
             <label for="">
-                Ingrese su correo
+                email
                 <input type="email" required>
             </label>
         </div>
         <div>
             <label for="">
-                Tu fecha de nacimiento
+                date of birth
                 <input type="date">
             </label>
         </div>
         <div>
             <label for="">
-                Ingrese la cantidad que va a comprar
+                Enter the amount you are going to buy
                 <input type="number" value="3" readonly>
                 <!-- Type="number": sirve para el numero de items en compras -->
             </label>
@@ -59,37 +60,37 @@
         
     </form> 
     <fieldset>
-        <legend>Tus pastiempos</legend>
+        <legend>Hobbies</legend>
         <label for="">
             <input type="checkbox">
-            Deporte
+            sport
         </label>
         <label for="">
             <input type="checkbox">
-            Leer
+            read
         </label>
         <label for="">
             <input type="checkbox">
-            Ir al cine
+            go to the cinema
         </label>
         <label for="">
             <input type="checkbox">
-            Viajar
+            travel
         </label>
         <label for="">
             <input type="checkbox">
-            Dormir
+            sleep
         </label>
     </fieldset>
     <fieldset>
-        <legend>Genero</legend>
-        <label for=""><input type="radio", name="gender">Mujer</label>
-        <label for=""><input type="radio", name="gender">Varon</label>
-        <label for=""><input type="radio", name="gender">Prefiero no decirlo</label>
+        <legend>Gender</legend>
+        <label for=""><input type="radio", name="gender">Female</label>
+        <label for=""><input type="radio", name="gender">Male</label>
+        <label for=""><input type="radio", name="gender">I prefer not to say</label>
     </fieldset>
     <fieldset>
-        <legend>Select y Opciones</legend>
-        <label for="country">Escoge tu pais</label> 
+        <legend>Select and Options</legend>
+        <label for="country">choose your country</label> 
         <!-- despues del atributo "id", se puede agregar "multiple" que nos permitira seleccionar varias opciones -->
         <select name="country" id="country">
             <!-- <option value="Peru">Peru</option>
@@ -102,16 +103,16 @@
             <option value="Colombia">Colombia</option>
         </optgroup>
         <optgroup label="Europa">
-            <option value="Francia">Francia</option>
+            <option value="France">France</option>
             <option value="Portugal">Portugal</option>
-            <option value="Alemania">Alemania</option>
+            <option value="Germany">Germany</option>
         </optgroup>
         <optgroup label="Asia">
             <option value="China">China</option>
-            <option value="Japon">Japon</option>
-            <option value="Thailandia">Thailandia</option>
+            <option value="Japan">Japan</option>
+            <option value="Thailand">Thailand</option>
         </optgroup>
-        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
         </select>
     </fieldset>
 
@@ -127,6 +128,7 @@
     <!-- <button type="submit">: envia los datos a la ruta especificada en la etiqueta de "form" 
         con el atributo "action" -->
     <button type="submit">tipo submit</button>
+    <a href="../index.html">COME BACK TO HOME</a>
     <script>
         document.getElementById('username').addEventListener('keyup', ()=>{
             console.log(e.target.value)
@@ -137,4 +139,9 @@
         // value: guarda el valor de cada campo 
     </script>
 </body>
+<style>
+    body{
+      background: rgb(236, 229, 193);
+    }
+  </style>
 </html>
