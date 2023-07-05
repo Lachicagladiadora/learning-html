@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+</head>
+
+<body>
+  <h1>FORM</h1>
+
+  <form action="" method="post" name="form" target="_blank" accept-charset="UTF-8" autocomplete="off">
+    <input type="text" name="username" id="" placeholder="username">
+    <input type="text" name="user" value="I'm user" id="">
+
+    <fieldset>
+      <legend><big><b>TEXT</b></big></legend>
+      <pre>
+        <input type="text" placeholder="type TEXT">
+        <input type="search" placeholder="type SEARCH">
+        <input type="tel" placeholder="type TEL">
+        <input type="url" placeholder="type URL">
+        <input type="email" placeholder="type EMAIL">
+        <input type="password" placeholder="type PASSWORD">
+        <label for="">HIDDEN<input type="hidden" placeholder="type HIDDEN"> </label>
+        <textarea name="textarea" placeholder="textarea with spellcheck" spellcheck="true" cols="35" rows="10"
+          wrap="hard"></textarea>
+      </pre>
+    </fieldset>
+
+    <fieldset>
+      <legend><big><b>input NUMBER</b></big></legend>
+      <input type="number" placeholder="number" value="5" min="0" max="42" step="6">
+      <input type="range" value="50" min="0" max="100" step="10"> <output>50</output>
+    </fieldset>
+
+    <fieldset>
+      <legend><big><b>input DATE</b></big></legend>
+      <pre>
+        <label for="">DATE<input type="date" placeholder="date" value="2023-07-04" min="2022-12-22" max="2023-12-22" step="7"></label>
+        <label for="">MONTH<input type="month" placeholder="month" value="2024-01" min="2023-09" max="2025-09" step="2"></label>
+        <label for="">WEEK<input type="week" placeholder="week" value="2025-week16" min="2024-week37" max="2025-week48" step="2"></label>
+        <label for="">TIME<input type="time" placeholder="time" value="7:00" min="12:00" max="18:00" step="30"></label>
+        <label for="">DATE TIME LOCAL<input type="datetime-local" placeholder="datetime-local" value="2024-07-23T11:00" min="2024-03-23T11:00" max="2024-11-23T11:00" step="3600"></label>
+      </pre>
+    </fieldset>
+
+    <fieldset>
+      <legend><big><b>input CHECKBOXES</b></big></legend>
+      <input type="checkbox" name="checkbox">checkbox
+      <input type="checkbox" name="checkbox with checked"  checked>checkbox with checked
+      <input type="checkbox" id="indeterminate"> checkbox indeterminate
+      <legend><big><b>visual appearance</b></big></legend>
+      <input type="checkbox" checked style="accent-color: red;">red
+      <input type="checkbox" checked style="accent-color: blue;">blue
+      <input type="checkbox" checked style="accent-color: yellow;">yellow
+      <input type="checkbox" checked style="accent-color: pink;">pink
+      <input type="checkbox" checked style="accent-color: green;">green
+      <input type="checkbox" checked style="accent-color: violet;">violet
+      <input type="checkbox" checked style="accent-color: rgb(101, 174, 183);">other
+    </fieldset>
+
+    <fieldset>
+      <legend><big><b>input RADIO BUTTONS</b></big></legend>
+      <input type="radio" name="radio-button" value="no-checked">no checked
+      <input type="radio" name="radio-button" value="checked" checked>checked
+    </fieldset>
+
+    <fieldset>
+      <legend><big><b>input COLOR</b></big></legend>
+      <input type="color" value="#ee9709">
+    </fieldset>
+
+    <input type="submit">
+  </form>
+
+</body>
+<script>
+  const indeterminateElement = document.getElementById("indeterminate")
+  indeterminateElement.indeterminate=true
+</script>
+</html>

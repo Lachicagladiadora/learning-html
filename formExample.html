@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMS</title>
+    <title>FORM EXAMPLE</title>
 </head>
 
 <body>
-    <h1>FORMS</h1>
+    <h1>FORM EXAMPLE</h1>
     <a href="../index.html">COME BACK TO HOME</a>
     <form name="log in" method="post" action="">
         <!-- al atributo "action" le damos la ruta del servidor. 
@@ -55,6 +55,7 @@
                 <label for="">
                     enter the amount you are going to buy
                     <input type="number" value="3" readonly>
+
                     <!-- Type="number": sirve para el numero de items en compras -->
                 </label>
             </div>
@@ -117,10 +118,15 @@
             <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
         </select>
     </fieldset>
+    <div>
+        <label for="">
+            progress
+            <input type="range">
+        </label>
+    </div>
 
     <!-- TYPE OF BUTTON -->
     <br>
-    <input type="range">
     <!-- podemos agregar imagenes -->
     <!-- <button type="button">: su comportamiento tiene que especificarse con java script -->
     <button type="button"> <img src="img02.png" height="400px" alt=""> tipo button</button>
