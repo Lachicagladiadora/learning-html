@@ -2,6 +2,9 @@
 Guide to learn, remember and feedback knowledge in HTML
 
 ## Content
+
+  ![definition lists](./img/html-img3.png)
+
 - title
 - icon: short cut icon
 - h1, h2, h3, h4, h5, h6
@@ -10,13 +13,14 @@ Guide to learn, remember and feedback knowledge in HTML
 - article
 - paragraph
 - section
-![section](./img/html1.png)
+
+![section](./img/html-img1.png)
+
 - lists
   - unordered list
   - ordered list
   - nested lists
   - definition lists
-  ![definition lists](./img/html2.png)
 - figure and figcaption
   - code
   - pre
@@ -24,17 +28,16 @@ Guide to learn, remember and feedback knowledge in HTML
 - blockquote
 - div and span
 - strong, em, hr, br
-![strong, em, hr, br](./img/html3.png)
 - subfolder
 - images
   - images according to viewport
-  ![images according to viewport](./img/html4.png)
 - article with other page
 - boards
 - forms
 - multimedia 
 - interactive content
 - aside and footer
-![aside and footer](./img/html5.png)
+
+![aside and footer](./img/html-img2.png)
 
 
