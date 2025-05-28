@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML</title>
+  </head>
+  <body>
+    <!-- noreferrer: evita que envies informacion de mas la pagina a la que te diriges -->
+    <a href="./index.html" rel="noreferrer">COME BACK TO HOME</a>
+    <!-- <hr /> -->
+    <h2>Non-semantic tags</h2>
+    <div><strong>div:</strong> group content</div>
+    <div>in</div>
+    <div>block</div>
+    <span><strong>span:</strong> group</span>
+    <span>content</span>
+    <span>in</span>
+    <span>line</span>
+    <h2>Semantic tags</h2>
+    <p>
+      Use HTML, considering that tags have meaning and describing the content
+    </p>
+    <h3>Elements</h3>
+    <ul>
+      <li><strong>p: </strong>paragraph</li>
+      <li>
+        <strong>aside: </strong>content that provides context but is not part of
+        the main flow, additional information
+      </li>
+      <li><strong>section: </strong>independent section</li>
+      <li>
+        <strong>article: </strong>block with information and its own meaning, it
+        can contain a header, paragraph and footer
+      </li>
+      <li>
+        <strong>main: </strong> <em>there must be only one</em>, encompasses the
+        main content of the page, content that changes on all URLs
+      </li>
+      <li><strong>header: </strong>head</li>
+      <li><strong>footer: </strong>footer</li>
+      <li><strong>p: </strong>paragraph</li>
+      <li><strong>p: </strong>paragraph</li>
+      <li><strong>p: </strong>paragraph</li>
+    </ul>
+    <h3>Attributes</h3>
+    <ul>
+      <li>
+        <strong>rel:</strong> in <strong>anchor</strong> element, for send
+        information from go
+      </li>
+      <li>
+        <strong>rol:</strong> in <strong>div</strong> element, to assign a role
+        according to the content it will have
+      </li>
+      <li>
+        <strong>download:</strong> in <strong>anchor</strong> element, When it
+        has an image inside and the href is equal to the img element, then
+        clicking on it can download it.
+        <em>It only works with the server's own resources</em>
+        <div>
+          <span>example: Click on the image and it will download</span>
+          <a download href="./img/charmander.png">
+            <img
+              src="./img/charmander.png"
+              alt="pokemon charmander"
+              width="200"
+            />
+          </a>
+        </div>
+      </li>
+      <li>
+        <strong>type:</strong> in <strong>ol</strong> element, that is listed
+        with numbers, letters, etc.
+      </li>
+      <li>
+        <strong>reversed:</strong> in <strong>ol</strong> element, to go in
+        reversed
+      </li>
+      <li>
+        <strong>start:</strong> in <strong>ol</strong> element, to tell you
+        where to start counting
+      </li>
+      <li>
+        <strong>pattern:</strong> in <strong>input type='tel'</strong> element,
+        to add simple validation
+      </li>
+      <li>
+        <strong>loading:</strong> in <strong>img</strong> element, to load an
+        image when needed or after everything has loaded
+      </li>
+    </ul>
+    <article></article>
+  </body>
+</html>
