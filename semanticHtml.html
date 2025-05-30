@@ -9,7 +9,7 @@
   <body>
     <!-- noreferrer: evita que envies informacion de mas la pagina a la que te diriges -->
     <a href="./index.html" rel="noreferrer">COME BACK TO HOME</a>
-    <!-- <hr /> -->
+    <hr />
     <h2>Non-semantic tags</h2>
     <div><strong>div:</strong> group content</div>
     <div>in</div>
@@ -18,13 +18,26 @@
     <span>content</span>
     <span>in</span>
     <span>line</span>
+    <span
+      ><strong
+        ><i>groups</i> <u><mark>labels</mark></u></strong
+      ></span
+    >
     <h2>Semantic tags</h2>
     <p>
       Use HTML, considering that tags have meaning and describing the content
     </p>
     <h3>Elements</h3>
     <ul>
-      <li><strong>p: </strong>paragraph</li>
+      <li><h1>H1: main title</h1></li>
+      <li><h2>H2: top level heading</h2></li>
+      <li><h3>H3: subheading</h3></li>
+      <li><h4>H4: sub-subheading</h4></li>
+      <li><h5>H5</h5></li>
+      <li><h6>H6</h6></li>
+      <li>
+        <p><strong>p: </strong>paragraph</p>
+      </li>
       <li>
         <strong>aside: </strong>content that provides context but is not part of
         the main flow, additional information
@@ -40,9 +53,144 @@
       </li>
       <li><strong>header: </strong>head</li>
       <li><strong>footer: </strong>footer</li>
-      <li><strong>p: </strong>paragraph</li>
-      <li><strong>p: </strong>paragraph</li>
-      <li><strong>p: </strong>paragraph</li>
+
+      WITH
+      <li>
+        <strong>pre: </strong>
+        <pre>
+          tag               This text wil        ...       be 
+                        represented the same in the
+        browser!
+        </pre>
+      </li>
+      <li>
+        <strong>a: </strong>
+        <ol>
+          <li>
+            <a
+              href="https://dl.icdst.org/pdfs/files3/c79990b0b853932d36ddc117ce2503e3.pdf"
+              hreflang="en"
+              download="#Destination"
+              target="_blank"
+              rel="noreferrer"
+              type="document.pdf"
+              >The Markdown Guide: references to other web pages or resources
+              such as documents, images, videos, etc.</a
+            >
+          </li>
+
+          <li>
+            Mailto:
+            <a
+              href="mailto:dev.roseny@gmail.com"
+              hreflang="en"
+              download="#Destination"
+              target="_blank"
+              rel="noreferrer"
+              type="document.pdf"
+              >Mail: send me an email</a
+            >
+          </li>
+          <li>
+            Telephone:
+            <a
+              href="tel:+089242434"
+              hreflang="en"
+              download="#Destination"
+              target="_blank"
+              rel="noreferrer"
+              type="document.pdf"
+              >Telephone: call me</a
+            >
+          </li>
+          <li>
+            Whatsapp:
+            <a
+              href="whatsapp://send?text=Interesting"
+              hreflang="en"
+              download="#Destination"
+              target="_blank"
+              rel="noreferrer"
+              type="document.pdf"
+              >Whatsapp: write me</a
+            >
+          </li>
+        </ol>
+      </li>
+
+      <li><strong>strong: </strong><strong> importance</strong></li>
+      <li><strong>b: </strong> <b>bold</b></li>
+      <li><strong>em: </strong><em>emphasis</em></li>
+      <li><strong>i: </strong><i>italic</i></li>
+      <li><strong>mark: </strong> <mark>highlighted text</mark></li>
+      <li><strong>u: </strong> <u>underline</u></li>
+      <li><strong>s: </strong><s> irrelevant</s></li>
+      <li><strong>strike: </strong><strike>crossed text</strike></li>
+
+      <li>
+        <strong>q: </strong
+        ><q cite="https://lenguajehtml.com/html/texto/etiqueta-html-q-cite/">
+          quotes for a phrase or message</q
+        >
+      </li>
+      <!--attribute 'cite': URL where the quotes comes from-->
+      <li>
+        <strong>cite: </strong
+        ><cite> reference or title highlight of a work</cite>
+      </li>
+      <li><strong>sup: </strong><sup>superscript</sup></li>
+      <li><strong>sub: </strong><sub>subscript</sub></li>
+      <li>
+        <strong>small: </strong
+        ><small> clarifications, warnings or notices</small>
+      </li>
+      <li><strong>big: </strong><big>big</big></li>
+      <li>
+        <strong>abbr: </strong>
+        <abbr title="Abbreviation or Acronym">abbr</abbr>
+        =>
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+      </li>
+      <li><strong>dfn: </strong><dfn title="dfn">definition</dfn></li>
+      <li>
+        <strong>Kbd:</strong>
+        <kbd>CTRL</kbd>
+        +
+        <kbd>Kbd</kbd>
+      </li>
+      <li>
+        <strong>samp: </strong>
+        <samp>output from a program or system to a user</samp>
+      </li>
+      <li>
+        <strong>time: </strong
+        ><time datetime="2023-12-22"> December 22, 2023</time>
+      </li>
+      <li>
+        <strong>data: </strong
+        ><data value="JRRT"> John Ronald Reuel Tolkien</data>
+      </li>
+      <li><strong>var: </strong>x !=== var <var>x</var></li>
+      <li>
+        <strong>code: </strong
+        ><code> const hola = () => { console.log("HELLO WORLD") } </code>
+      </li>
+      <li>
+        <strong>ins: </strong
+        ><span
+          >Lorem ipsum
+          <ins
+            datetime="2023-07-03"
+            cite="https://lenguajehtml.com/html/texto/etiqueta-html-ins-del/"
+            >inst-added text</ins
+          >
+          dolor sit amet consectetur adipisicing elit. Quo error fuga odit
+          quisquam asperiores soluta deserunt pariatur
+          <ins>ins-added text</ins> quidem rerum, voluptate corrupti earum
+          voluptatibus
+        </span>
+      </li>
+      <li><strong>del: </strong> <del>text that has been removed</del></li>
     </ul>
     <h3>Attributes</h3>
     <ul>
