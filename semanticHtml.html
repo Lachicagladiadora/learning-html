@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semantic HTML</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-dracula.min.css"
+    />
   </head>
   <body>
     <!-- noreferrer: evita que envies informacion de mas la pagina a la que te diriges -->
@@ -171,9 +177,27 @@
         ><data value="JRRT"> John Ronald Reuel Tolkien</data>
       </li>
       <li><strong>var: </strong>x !=== var <var>x</var></li>
+
       <li>
-        <strong>code: </strong
-        ><code> const hola = () => { console.log("HELLO WORLD") } </code>
+        <strong>code: </strong>
+        <ol>
+          <li>
+            <code
+              >//simple const hola = () => { console.log("HELLO WORLD") }
+            </code>
+          </li>
+          <li>
+            <pre>
+              <code class="language-javascript" tabindex="0">
+                // specific language and styles
+                function mensaje(str) {
+                  console.log(str);
+                }
+              </code>
+            </pre>
+            <script src="https://cdn.jsdelivr.net/npm/prismjs"></script>
+          </li>
+        </ol>
       </li>
       <li>
         <strong>ins: </strong
@@ -191,6 +215,44 @@
         </span>
       </li>
       <li><strong>del: </strong> <del>text that has been removed</del></li>
+      <li>
+        <strong>br: </strong>
+        <br />
+        line-br <br />breaks-br <br />br- another line breaks
+      </li>
+      <li>
+        <strong>hr: </strong> cambio de seccion, de capitulo,
+        <em>rompe la secuencia</em>
+        <hr />
+      </li>
+      <li>
+        <strong>blockquote: </strong>
+        <blockquote cite="http://es.wikiquote.org/wiki/Fight_Club">
+          <cite class="cite"
+            >La primera regla del Club de la Lucha es: Nadie habla sobre el Club
+            de la Lucha.</cite
+          >
+          <cite class="author">Tyler Durden en El Club de la Lucha</cite>
+        </blockquote>
+      </li>
+      <li>
+        <strong>wbr: </strong>
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaa<strong>wbr</strong><wbr /><strong
+          >wbr</strong
+        >bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<strong>wbr</strong><wbr /><strong
+          >wbr</strong
+        >cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<strong
+          >wbr</strong
+        ><wbr /><strong>wbr</strong
+        >ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd<strong
+          >wbr</strong
+        ><wbr /><strong>wbr</strong
+        >eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<strong>wbr</strong
+        ><wbr /><strong>wbr</strong
+        >fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff<strong
+          >wbr</strong
+        ><wbr /><strong>wbr</strong>
+      </li>
     </ul>
     <h3>Attributes</h3>
     <ul>

@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARTICLE</title>
-</head>
-<body>
-    <h1>ARTICLE</h1>
+  </head>
+  <body>
     <a href="./index.html">COME BACK TO HOME</a>
+    <hr />
+    <h1>Article & Markers</h1>
+    <h2>Article</h2>
     <article itemscope itemtype="https://schema.org/Blog">
-        <h2>Curso HTML 5</h2>
-        <p>Este curso es viernes y sabado...</p>
-        <footer>
-            <p itemprop="author">Julio Cortazar</p>
-        </footer>
+      start article
+      <h2>Curso HTML 5</h2>
+      <p>Este curso es viernes y sabado...</p>
+      <footer>
+        <p itemprop="author">Julio Cortazar</p>
+      </footer>
+      end article
     </article>
-</body>
-<style>
-    body{
+
+    <h2>
+      <a href="./markers.html" target="_blank" rel="noreferrer">Markers</a>
+    </h2>
+    <!-- Marcadores: enlaces a paginas externa o a la misma pagina -->
+    <p></p>
+    <pre>
+    <big><strong>links to external pages or to the same page</strong></big>
+    <a href="./subfolder/subcarpeta.html" target="_blank" rel="noreferrer">Subfolder</a>
+    <!-- El target blank es para abrir una pestanha
+      redirecciona a informacion ajena para que no deje mi web -->
+    <big><strong>links that opens in another tab</strong></big>
+    <a href="./markers.html#capitulo2" target="_blank" rel="noreferrer">Ir al capitulo 2 de la pagina marcadores</a>
+  </pre>
+  </body>
+  <style>
+    body {
       background: rgb(240, 158, 58);
     }
   </style>
