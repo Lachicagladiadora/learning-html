@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["charmander"]
+  "cSpell.words": ["charmander"],
+  "livePreview.defaultPreviewPath": "/index.html"
 }
